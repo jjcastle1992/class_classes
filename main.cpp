@@ -2,10 +2,24 @@
 #include <sstream>
 using namespace std;
 
-/*
-Enter code for class Student here.
-Read statement for specification.
-*/
+class Student {
+    private:
+        int age = 0;
+        string firstName = "";
+        string lastName = "";
+        string standard = "";
+
+    public:
+        //Getter and setter for age
+        void setAge (int inputAge) {
+            age = inputAge;
+        }
+        //Getter and setter for first name
+
+        //Getter and setter for last name
+
+        //create to_string to print age,first name, last name, and standard
+};
 
 int main() {
     int age, standard;
