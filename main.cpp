@@ -40,7 +40,19 @@ class Student {
         }
         //create to_string to print age,first name, last name, and standard
         string to_string () {
+            string str_age = "";
+            string str_standard = "";
             string finalString = "";
+
+            ostringstream str1;
+            ostringstream str2;
+            str1 << age;
+            str2 << standard;
+            str_age = str1.str();
+            str_standard = str2.str();
+            stringstream ss;
+            ss << str_age << ',' << firstName << ',' << lastName << ',' << str_standard;
+            finalString = ss.str();
             return finalString;
         }
 };
